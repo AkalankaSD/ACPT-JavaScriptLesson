@@ -1,4 +1,9 @@
 
+window.addEventListener('load', function() {
+    var inputField = document.getElementById('email');
+    inputField.value = ''; // Clear the input field
+  });
+
 
 
 function add(){

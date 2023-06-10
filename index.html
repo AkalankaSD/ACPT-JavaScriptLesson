@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./Styles/index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    
+
 </head>
 <body>
     <h2> This is Java Script Lesson</h2>
 
-    <button onclick=""> Click Me</button>
-<br> <br> <hr> <br><br>
+<br> <br> <hr>
     <div class="login">
-       
-         <input id="email" type="email" type="text" placeholder="Password Here">
-        <input id="password" type="password" type="text" placeholder="Password Here">
-
-        <button onclick="Login();">Login</button>
-
-<!-- 
+        <div class="loginPage">
+            <h1>Login Page</h1>
+            <input class="inputval" id="email" type="text"  placeholder="User Name" autocomplete="off" value="Initial Value">
+            <br>
+            <input class="inputval" id="password" type="password" placeholder="Password " autocomplete="off">
+            <br>
+            <button class="button" onclick="Login();">Login</button>
+        </div>
+        
+<!--    
 
         <input type="text" id="num1" placeholder="Number 1">
         <input type="text" id="num2" placeholder="Number 2">
