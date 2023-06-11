@@ -1,7 +1,7 @@
 
 window.addEventListener('load', function() {
     var inputField = document.getElementById('email');
-    inputField.value = ''; // Clear the input field
+   // inputField.value = ''; // Clear the input field
   });
 
 
@@ -28,7 +28,7 @@ function loginUser(){
 
 var number = 16;
 
-if(num > 16){
+if(number > 16){
     console.log("Condition True...!");
 }
 
@@ -111,7 +111,7 @@ function Login(){
     if(email==dbUserName && upassword==password){
 
         alert("Login Success");
-
+        window.location.href = 'Home.html';
     }
 else{
     alert("Login Faild");
@@ -142,4 +142,112 @@ switch(seen){
 
     default:
         console.log("Not Matched");
+}
+
+
+function getMonth(){
+    var month = parseInt(document.getElementById("month").value);
+    alert(month);
+
+switch(month){
+    case 1:
+        alert("Duruthu");
+        break;
+
+    case 2:
+        alert("Navam");
+        break;
+
+    case 3:
+        alert("Madin");
+        break;
+
+    case 4:
+        alert("Bak");
+        break;
+
+    case 5:
+        alert("Wesak");
+        break;
+
+    case 6:
+        alert("Poson");
+        break;
+    case 7:
+        alert("Asala");
+        break;
+
+    case 8:
+        alert("Nikini");
+        break;
+
+    case 9:
+        alert("Binara");
+        break;
+    case 10:
+        alert("Wap");
+        break;
+
+    case 11:
+        alert("Ill");
+        break;
+
+    case 12:
+        alert("Uduwap");
+        break;
+
+    default:
+        console.log("Not Matched");
+
+
+
+
+
+
+
+}
+}
+
+
+//var seen = document.getElementById("month").value;
+var seen = 5;
+
+switch(seen){
+    case 5:
+        console.log("5 selected");
+        break;
+
+    case 6:
+        console.log("6 selected");
+        break;
+
+    case 7:
+        console.log("7 selected");
+        break;
+
+    default:
+        console.log("Not Matched");
+}
+
+
+
+
+
+//-------------------LOOP---------------------//
+
+// for Loop //
+
+
+
+function getCount(){
+
+    var count = document.getElementById("count").value;
+alert(count);
+
+ for(x = count; x<5; x++){
+    console.log("1");
+    alert(x);
+ }
+
+
 }
