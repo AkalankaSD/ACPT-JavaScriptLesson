@@ -251,3 +251,90 @@ alert(count);
 
 
 }
+
+
+// ------------ For Loop Condtion----------------//
+
+function checkLoop(){
+
+    var myVal = 4;
+
+    for(var i = 0; i < 3 ; i++ ){
+
+        if(myVal % 2 == 0){
+            myVal +=3;
+        }
+        else{
+            myVal +=2;
+        }
+
+    }
+
+
+
+}
+
+
+// create a new programe //
+
+var maxattempt = 0;
+
+function LoginNew(){
+
+
+    var dbUserName = "admin";
+    var password = "123";
+
+   
+    var email = document.getElementById("email").value;
+    var upassword = document.getElementById("password").value;
+
+
+    var attempt = document.getElementById("loginAtmpt").value;
+
+    alert("Attempt :"+attempt);
+
+    if(email==dbUserName && upassword==password){
+
+        alert("Login Success");
+        window.location.href = 'Home.html';
+        ClearInputs();
+        //return true;
+    }
+    else{
+        
+       if(attempt == ''){
+        document.getElementById("loginAtmpt").value = 1;
+       }
+       else{
+        
+        document.getElementById("loginAtmpt").value = 1+attempt;
+       }
+       
+       alert("Login Faild, Attempt : "+document.getElementById("loginAtmpt").value);
+       
+        ClearInputs();
+        maxattempt++;
+    }  
+
+} 
+
+
+
+    
+
+
+
+function ClearInputs(){
+  //  alert("input Clear");
+    var email = document.getElementById("email").value ="";
+    var upassword = document.getElementById("password").value="";
+
+
+
+
+    email = "";
+    upassword = "";
+}
+
+
